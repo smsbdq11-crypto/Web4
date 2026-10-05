@@ -1,6 +1,4 @@
-
-
-
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -10,7 +8,7 @@
     <style>
 
         body {
-            background-color: #ffe6ef;
+            background-color: pink;
             font-family: Arial;
             text-align: center;
             padding-top: 100px;
@@ -50,10 +48,6 @@
             cursor: pointer;
         }
 
-        button:hover {
-            background-color: #d94f7d;
-        }
-
         #result {
             color: #d94f7d;
             margin-top: 25px;
@@ -65,7 +59,6 @@
 
 
 <body>
-
 
     <div class="box">
 
@@ -90,19 +83,13 @@
 
         function calculateAge() {
 
-            let birthDate =
-                document.getElementById("birthDate").value;
+            let birthDate = document.getElementById("birthDate").value;
 
-            let birth =
-                new Date(birthDate);
+            let birth = new Date(birthDate);
 
-            let today =
-                new Date();
+            let today = new Date();
 
-            let age =
-                today.getFullYear() -
-                birth.getFullYear();
-
+            let age = today.getFullYear() - birth.getFullYear();
 
             if (
                 today.getMonth() < birth.getMonth() ||
@@ -116,14 +103,12 @@
 
             }
 
-
             document.getElementById("result").innerHTML =
                 "You are " + age + " years old 🎂💕";
 
         }
 
     </script>
-
 
 </body>
 
